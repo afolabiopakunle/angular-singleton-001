@@ -14,6 +14,10 @@ export class ContactComponent implements OnInit {
   }
 
   get color() {
-    return this.colorService.color
+    return this.colorService.color;
+  }
+
+  set setColor(val) {
+    this.colorService.color = val
   }
 }
